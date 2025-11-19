@@ -142,6 +142,6 @@ El poder de Swagger UI radica en la capacidad de probar la API directamente desd
 
 -----
 
-**¡Documentación completada y lista para la revisión\!**
+**¡Documentación completa y lista para la revisión\!**
 
 Tu archivo `swagger.yaml` debe reflejar esta información para que la interfaz interactiva se genere correctamente.
