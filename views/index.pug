@@ -1,0 +1,34 @@
+extends layout
+include mixins
+
+block content
+  section#inicio.hero
+    .hero-content
+      h1.hero-title= nombre
+      p.hero-subtitle= descripcion
+      +boton('Comenzar')
+  
+  section#servicios.servicios
+    .container
+      h2.section-title Nuestros Servicios
+      .servicios-grid
+        each servicio in servicios
+          +tarjeta-servicio(servicio.icono, servicio.titulo, servicio.descripcion)
+  
+  section#contacto.contacto
+    .container
+      h2.section-title Contáctanos
+      form.formulario
+        .form-group
+          label(for='nombre') Nombre:
+          input#nombre(type='text', name='nombre', placeholder='Tu nombre', required)
+        
+        .form-group
+          label(for='email') Email:
+          input#email(type='email', name='email', placeholder='tu@email.com', required)
+        
+        .form-group
+          label(for='mensaje') Mensaje:
+          textarea#mensaje(name='mensaje', rows='5', placeholder='Tu mensaje', required)
+        
+        +boton('Enviar')

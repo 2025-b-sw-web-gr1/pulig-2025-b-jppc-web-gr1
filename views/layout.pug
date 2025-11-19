@@ -1,0 +1,24 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Página web moderna con Pug')
+    title= title
+    link(rel='stylesheet', href='/style.css')
+  body
+    header.header
+      nav.navbar
+        .logo= nombre
+        ul.nav-menu
+          li: a(href='#inicio') Inicio
+          li: a(href='#servicios') Servicios
+          li: a(href='#contacto') Contacto
+    
+    main.main-content
+      block content
+    
+    footer.footer
+      p &copy; 2025 #{nombre}. Todos los derechos reservados.
+    
+    script(src='/main.js')

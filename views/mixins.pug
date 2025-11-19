@@ -1,0 +1,8 @@
+mixin tarjeta-servicio(icono, titulo, descripcion)
+  .card
+    .card-icon= icono
+    h3.card-title= titulo
+    p.card-description= descripcion
+
+mixin boton(texto, clase='btn-primary')
+  button(class=`btn ${clase}`)= texto
