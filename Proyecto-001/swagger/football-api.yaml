@@ -1,0 +1,180 @@
+openapi: 3.0.0
+info:
+  title: API de Equipos y Jugadores
+  version: 1.0.0
+servers:
+  - url: https://api.ejemplo.com
+paths:
+  /teams:
+    get:
+      summary: Obtener todos los equipos
+      responses:
+        '200':
+          description: Lista de equipos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Team'
+    post:
+      summary: Crear nuevo equipo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TeamInput'
+      responses:
+        '201':
+          description: Equipo creado
+  /teams/{id}:
+    get:
+      summary: Obtener equipo por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '200':
+          description: Equipo encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Team'
+    put:
+      summary: Actualizar equipo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TeamInput'
+      responses:
+        '200':
+          description: Equipo actualizado
+    delete:
+      summary: Eliminar equipo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '204':
+          description: Eliminado
+  /players:
+    get:
+      summary: Obtener todos los jugadores
+      responses:
+        '200':
+          description: Lista de jugadores
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Player'
+    post:
+      summary: Crear nuevo jugador
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlayerInput'
+      responses:
+        '201':
+          description: Jugador creado
+  /players/{id}:
+    get:
+      summary: Obtener jugador por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '200':
+          description: Jugador encontrado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Player'
+    put:
+      summary: Actualizar jugador
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlayerInput'
+      responses:
+        '200':
+          description: Jugador actualizado
+    delete:
+      summary: Eliminar jugador
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '204':
+          description: Eliminado
+  /teams/{id}/players:
+    get:
+      summary: Obtener jugadores de un equipo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        '200':
+          description: Lista de jugadores del equipo
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Player'
+components:
+  schemas:
+    Team:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        country: { type: string }
+    TeamInput:
+      type: object
+      required: [name, country]
+      properties:
+        name: { type: string }
+        country: { type: string }
+    Player:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        position: { type: string }
+        teamId: { type: integer }
+    PlayerInput:
+      type: object
+      required: [name, position, teamId]
+      properties:
+        name: { type: string }
+        position: { type: string }
+        teamId: { type: integer }
