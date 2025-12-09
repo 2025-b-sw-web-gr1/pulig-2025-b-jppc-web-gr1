@@ -108,8 +108,7 @@ Proyecto 001/
 - **HTTP**: Protocolo de comunicación.
 
 ## Autores
-- [Nombre del Estudiante 1]
-- [Nombre del Estudiante 2]
+- Jhonathan Pulig
 
 ---
 Proyecto desarrollado para el curso de Desarrollo Web.
