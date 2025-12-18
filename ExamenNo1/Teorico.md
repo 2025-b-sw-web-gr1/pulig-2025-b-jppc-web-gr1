@@ -4,10 +4,7 @@
 **Estudiante:** Jhonathan Pulig
 **Fecha:** 18 de Noviembre de 2025
 
------
-¡Claro! La información que proporcionaste es una excelente base. Voy a expandir la respuesta, agregando más detalles cruciales sobre la importancia de la documentación de APIs, Swagger y el estándar OpenAPI, enfocándonos en el valor que aportan al desarrollo de software moderno.
 
----
 
 ## 🎯 ¿Por qué es Crucial Documentar una API?
 
