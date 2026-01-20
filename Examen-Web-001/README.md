@@ -526,10 +526,13 @@ npm install
 
 ---
 
-## 📧 Contacto
 
-Para preguntas o sugerencias sobre este proyecto, contacta con el instructor del curso.
+## 👨‍💻 Autor
+
+Proyecto 001 - Jhonathan Pulig
+Curso: Desarrollo Web  
+Fecha: 28/01/2026
 
 ---
 
-**Última actualización:** 19 de enero de 2026
+**¡Disfruta explorando tu API documentada!** 🚀
