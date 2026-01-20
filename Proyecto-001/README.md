@@ -260,8 +260,6 @@ Proyecto-001/
 })
 ```
 
----
-
 ## 🔗 Enlaces Útiles
 
 - [Swagger UI](http://localhost:3000/api)
