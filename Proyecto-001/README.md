@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📘 Proyecto 001 – Documentación de Endpoints con Swagger
 
 ## 🎯 Objetivo
@@ -293,8 +292,3 @@ Fecha: 2026
 ---
 
 **¡Disfruta explorando tu API documentada con Swagger!** 🚀
-=======
-# pulig-2025-b-jppc-web-gr1
-Jhonathan Paul Pulig Cuenca jppc
-Hola mundo! 
->>>>>>> cb7eb045d71b610e684b0591dd80ad4a98c5daf6

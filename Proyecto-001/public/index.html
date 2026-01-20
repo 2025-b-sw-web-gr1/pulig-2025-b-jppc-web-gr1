@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API de Equipos y Jugadores - Proyecto 001</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2.5em;
+      }
+
+      .subtitle {
+        color: #667eea;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      .info-box {
+        background: #f5f5f5;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: left;
+        border-radius: 5px;
+      }
+
+      .links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 30px 0;
+      }
+
+      a {
+        display: inline-block;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        font-weight: bold;
+      }
+
+      a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .endpoints {
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      .endpoints h3 {
+        color: #667eea;
+        margin-bottom: 15px;
+      }
+
+      .endpoint {
+        background: #f9f9f9;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 3px;
+        font-family: monospace;
+        font-size: 0.9em;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 3px 8px;
+        background: #667eea;
+        color: white;
+        border-radius: 3px;
+        font-size: 0.8em;
+        margin-right: 5px;
+      }
+
+      footer {
+        margin-top: 30px;
+        color: #999;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎯 Proyecto 001</h1>
+      <p class="subtitle">Documentación de Endpoints con Swagger (OpenAPI)</p>
+
+      <div class="info-box">
+        <strong>📝 Descripción:</strong>
+        <p>
+          API RESTful de Equipos y Jugadores documentada automáticamente con
+          Swagger, basada en NestJS + TypeORM + SQLite
+        </p>
+      </div>
+
+      <div class="links">
+        <a href="http://localhost:3000/api" target="_blank">📚 API Documentation (Swagger)</a>
+        <a href="http://localhost:3000/api-json" target="_blank">🔗 OpenAPI JSON</a>
+      </div>
+
+      <div class="endpoints">
+        <h3>📋 Endpoints Disponibles</h3>
+
+        <h4 style="margin-top: 20px; color: #333;">Teams (Equipos)</h4>
+        <div class="endpoint">
+          <span class="tag" style="background: #4caf50;">GET</span>
+          <span>/teams</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #4caf50;">GET</span>
+          <span>/teams/:id</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #4caf50;">GET</span>
+          <span>/teams/:id/players</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #2196f3;">POST</span>
+          <span>/teams</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #ff9800;">PUT</span>
+          <span>/teams/:id</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #f44336;">DELETE</span>
+          <span>/teams/:id</span>
+        </div>
+
+        <h4 style="margin-top: 20px; color: #333;">Players (Jugadores)</h4>
+        <div class="endpoint">
+          <span class="tag" style="background: #4caf50;">GET</span>
+          <span>/players</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #4caf50;">GET</span>
+          <span>/players/:id</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #2196f3;">POST</span>
+          <span>/players</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #ff9800;">PUT</span>
+          <span>/players/:id</span>
+        </div>
+        <div class="endpoint">
+          <span class="tag" style="background: #f44336;">DELETE</span>
+          <span>/players/:id</span>
+        </div>
+      </div>
+
+      <footer>
+        <p>🚀 Proyecto 001 - Documentación con Swagger | NestJS + TypeORM + SQLite</p>
+      </footer>
+    </div>
+  </body>
+</html>
