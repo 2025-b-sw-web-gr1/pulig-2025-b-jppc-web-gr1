@@ -195,19 +195,6 @@ curl -X DELETE http://localhost:3000/teams/1
 
 ---
 
-## 📊 Cambios respecto al Examen 02
-
-| Aspecto | Examen 02 | Proyecto 001 |
-|---------|-----------|--------------|
-| **Endpoints** | ✅ Implementados | ✅ Mismos (sin cambios) |
-| **Base de datos** | SQLite + TypeORM | SQLite + TypeORM (igual) |
-| **Documentación** | ❌ Manual/curl | ✅ **Swagger automático** |
-| **UI interactiva** | ❌ No tiene | ✅ **Swagger UI** |
-| **Decoradores Swagger** | ❌ No | ✅ **@ApiTags, @ApiOperation, @ApiResponse** |
-| **Ejemplos en DTOs** | ❌ No | ✅ **@ApiProperty con ejemplos** |
-
----
-
 ## 📁 Estructura del Proyecto
 
 ```
@@ -285,9 +272,9 @@ Proyecto-001/
 
 ## 👨‍💻 Autor
 
-Proyecto 001 - Estudiante  
+Proyecto 001 - Jhonathan Pulig
 Curso: Desarrollo Web  
-Fecha: 2026
+Fecha: 28/01/2026
 
 ---
 
